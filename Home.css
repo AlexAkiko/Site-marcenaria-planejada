@@ -106,29 +106,31 @@ nav ul a{
 
 .h2-quadrado{
     display: flex;
-    width: 80%;
+    width: 70%;
     margin: 250px auto 60px auto;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
 .Galeria{
+    border: solid red;
     display: flex;
-    gap: 80px;
+    gap: 110px;
     justify-content: center;
     margin-top: 100px;
 }
+
 
 
 .textos-p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 82%;
+    width: 123vh;
     height: 180px;
-    gap: 40px;
+    gap: 60px;
     margin: auto;
     margin-top: -20px;
     padding: 10px;
@@ -137,15 +139,16 @@ nav ul a{
 }
 
 .textos-p p {
+    border: solid red;
     background-color: #A97869;
     display: flex;
     justify-content: center;        /* alinha horizontalmente */
     align-items: center;            /* alinha verticalmente */
     padding: 30px;                  /* espaço interno */
-    width: 100%;
-    height: 70%;
+    width: 90%;
+    height: 30%;
     margin: 0 20px;   
-    margin-top: 30px;              /* margem horizontal */
+    margin-top: 10px;              /* margem horizontal */
     text-align: center;
     border-radius: 4px;
 }
@@ -154,14 +157,16 @@ nav ul a{
 .textos-h3{
     
     display: flex;
-    width: 80%;
-    gap: 70px;
+    width: 120vh;
+    gap: 90px;
     justify-content: center;
     margin: auto;
-    margin-top: -190px;
+    margin-top: -200px;
     font-size: 24px;
     text-align: center;
 }
+
+
 
 .textos-h3 h3 {
     background-color: #502721;
