@@ -122,3 +122,85 @@ nav ul a{
       .card button:hover {
         background-color: #8b5042;
       }
+
+      /* Media Query para telas pequenas (smartphones) */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column; /* Empilha os cards verticalmente */
+        align-items: center;
+        margin-top: -100px;
+        gap: 20px; /* Reduz o espaçamento entre os cards */
+        padding: 20px;
+    }
+
+    .card {
+        width: 90%; /* Ajusta a largura dos cards para ocupar quase toda a tela */
+        margin-top: 0; /* Remove o deslocamento superior */
+    }
+
+    .logo {
+        width: 60px; /* Reduz o tamanho do círculo */
+        height: 60px;
+        top: -30px; /* Ajusta a posição do círculo */
+    }
+
+    .logo img {
+        width: 50px; /* Reduz o tamanho da imagem */
+        height: 50px;
+    }
+
+    .card h2 {
+        font-size: 24px; /* Reduz o tamanho do título */
+    }
+
+    .card p {
+        font-size: 16px; /* Reduz o tamanho do texto */
+    }
+
+    .card button {
+        width: 150px; /* Reduz o tamanho do botão */
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+/* Media Query para telas muito pequenas (smartphones menores) */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column; /* Empilha os itens do menu */
+        gap: 10px; /* Reduz o espaçamento entre os itens */
+    }
+
+    nav ul a {
+        font-size: 24px; /* Reduz o tamanho da fonte do menu */
+    }
+
+    .card {
+        padding: 20px; /* Reduz o padding interno dos cards */
+    }
+}
+
+/* Media Query para telas médias (tablets) */
+@media (max-width: 1024px) {
+    .cards {
+        gap: 30px; /* Ajusta o espaçamento entre os cards */
+    }
+
+    .card {
+        width: 45%; /* Ajusta a largura dos cards para caberem lado a lado */
+    }
+
+    .card h2 {
+        font-size: 28px; /* Ajusta o tamanho do título */
+    }
+
+    .card p {
+        font-size: 18px; /* Ajusta o tamanho do texto */
+    }
+
+    .card button {
+        width: 160px; /* Ajusta o tamanho do botão */
+        height: 45px;
+        font-size: 20px;
+    }
+}
