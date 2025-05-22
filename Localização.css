@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    margin: 0;
+    background-color: #9A5C4D;
+    padding: 0;
+    color: white;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav ul{
+    list-style: none;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    padding: 10px;
+    height: 60px;
+    background-color: #502721;
+    flex-wrap: wrap;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    margin-top: 10px;
+    font-weight: Thin;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.Localização-Section img{
+    display: flex;
+    width: 180px;
+    margin: auto;
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Localização-Section h2{
+    display: flex;
+    font-size: 62px;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Localização-Section iframe{
+    display: flex;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.banner img{
+    display: flex;
+    width: 1920px;
+    height: 800px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+/* Responsividade para telas menores */
+
+@media (max-width: 900px) {
+    .Localização-Section img {
+        width: 50px;
+        margin-top: 100px;
+    }
+    nav ul {
+        gap: 40px;
+        padding: 5px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    nav ul a {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    .Localização-Section h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .Localização-Section iframe {
+        width: 95vw;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .banner img {
+        width: 100vw;
+        height: auto;
+        margin-top: 40px;
+    }
+}

@@ -61,7 +61,7 @@ nav ul a{
 
 .container {
     position: absolute; /* Permite posicionar o elemento em relação ao pai */
-    top: 60%; /* Ajuste para posicionar acima da imagem */
+    top: 70%; /* Ajuste para posicionar acima da imagem */
     left: 50%; /* Centraliza horizontalmente */
     transform: translate(-50%, -50%); /* Centraliza o elemento */
     background-color:#B79283;
@@ -115,7 +115,6 @@ nav ul a{
 }
 
 .Galeria{
-    border: solid red;
     display: flex;
     gap: 110px;
     justify-content: center;
@@ -139,7 +138,6 @@ nav ul a{
 }
 
 .textos-p p {
-    border: solid red;
     background-color: #A97869;
     display: flex;
     justify-content: center;        /* alinha horizontalmente */
@@ -229,104 +227,33 @@ nav ul a{
 
 
 
-/*Responsividade
+/*Responsividade*/
 
-
-
-
-  /* Estilos para telas menores que 768px (tablets e celulares) */
-@media (max-width: 750px) {
+@media (max-width: 700px) {
     nav ul {
-        flex-direction: row; /* Empilha os itens do menu */
-        gap: 30px; /* Reduz o espaçamento entre os itens */
-        height: auto; /* Ajusta a altura do menu */
+        flex-direction: column; /* Empilha os itens do menu */
+        gap: 20px; /* Espaçamento menor entre os itens */
+        height: 70px; /* Altura automática */
+        align-items: center; /* Centraliza os itens */
+        padding: 10px 0;
     }
 
-    
-    .container {
-        margin-top: 300px;
-        width: 90%; /* Reduz a largura do container */
-        padding: 15px; /* Ajusta o espaçamento interno */
-      }
-
-      .diferenciais h3{
-        font-size: 16px;
-        width: 60%;
-      }
-      .diferenciais p{
-        font-size: 14px;
-      }
-
-      .h2-quadrado{
-        margin-top: 330px;
-      }
-    
-      .textos-h3{
-        width: 20%;
-        margin-top: 50px;
-      }
-      .textos-p {
-        margin-top: 10px;
-        display: flex;
-        width: 90%; /* Ajusta a largura do contêiner */
-        flex-direction: column; /* Empilha os textos */
-        gap: 20px; /* Reduz o espaçamento entre os textos */
-      }
-    
-      .textos-p p {
-        width: 100%;
-        margin: 0 10px;
-        font-size: 1rem;
-      }
-    
-      .Galeria {
-        flex-direction: column;
-        gap: 30px;
-      }
-    .feedbacks h2{
-        margin-top: -100px;
+    nav ul a {
+        font-size: 22px;
+        margin-top: 0;
     }
-      .feedbacks-imgs {
-        width: 60%;
-        flex-direction: column;
-        align-items: center;
-      }
     
-      .feedbacks-imgs img {
-        max-width: 30%;
-        height: auto;
-      }
-    
+
+    /* ...restante do seu código responsivo... */
 }
 
-/* Estilos para telas menores que 480px (celulares pequenos) */
 @media (max-width: 480px) {
     nav ul a {
-        font-size: 20px; /* Reduz ainda mais o tamanho da fonte do menu */
+        font-size: 16px; /* Fonte menor para caber melhor */
+        padding: 8px 0;
     }
-
-    .imagem-home h1 {
-        font-size: 2rem; /* Ajusta o tamanho do título */
+    nav ul {
+        gap: 10px;
     }
-
-    .Galeria img {
-        width: 100%; /* Faz as imagens ocuparem toda a largura */
-    }
-
-    .textos-p {
-        font-size: 18px; /* Reduz o tamanho da fonte */
-        padding: 10px; /* Ajusta o espaçamento interno */
-    }
-
-    .feedbacks h2{
-        margin-top: -140px;
-    }
-
-    .feedbacks-img{
-        margin-top: -40px;
-    }
-
-    .feedbacks-img img {
-        width: 400px /* Reduz ainda mais o tamanho das imagens */
-    }
+    /* ...restante do seu código responsivo... */
 }
