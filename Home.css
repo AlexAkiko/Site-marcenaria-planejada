@@ -225,35 +225,173 @@ nav ul a{
   }
 
 
-
-
-/*Responsividade*/
-
-@media (max-width: 700px) {
+/* Responsivo para tablets */
+@media (max-width: 900px) {
     nav ul {
-        flex-direction: column; /* Empilha os itens do menu */
-        gap: 20px; /* Espaçamento menor entre os itens */
-        height: 70px; /* Altura automática */
-        align-items: center; /* Centraliza os itens */
-        padding: 10px 0;
-    }
-
-    nav ul a {
-        font-size: 22px;
-        margin-top: 0;
-    }
-    
-
-    /* ...restante do seu código responsivo... */
-}
-
-@media (max-width: 480px) {
-    nav ul a {
-        font-size: 16px; /* Fonte menor para caber melhor */
+        gap: 24px;
         padding: 8px 0;
     }
+    nav ul a {
+        font-size: 16px;
+    }
+    .container {
+        width: 92vw;
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+    .h2-quadrado {
+        width: 92vw;
+        font-size: 1.7rem;
+        margin: 400px auto 200px auto;
+    }
+    textos-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza os textos */
+    gap: 8px; /* espaço entre os parágrafos */
+    margin: 16px 0;
+}
+
+.textos-p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        width: 96vw;
+        height: auto;
+        margin: 12px auto;
+        padding: 4px;
+        font-size: 1rem;
+    }
+    .textos-p p {
+        padding: 10px;
+        margin: 0;
+        width: 90vw;
+        font-size: 1rem;
+    }
+    .textos-h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        width: 96vw;
+        margin: 12px auto;
+        font-size: 1.1rem;
+    }
+    .textos-h3 h3 {
+        font-size: 1.1rem;
+        padding: 8px;
+    }
+    .Galeria {
+        gap: 10px;
+        margin-top: -100px;
+    }
+    .diferenciais {
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+    }
+    .diferencial {
+        width: 44vw;
+        min-width: 160px;
+        max-width: 350px;
+        margin-bottom: 10px;
+    }
+    .feedbacks {
+        width: 95vw;
+        gap: 0.8rem;
+        margin-top: 3em;
+    }
+    .feedbacks h2 {
+        font-size: 1.2rem;
+    }
+    .feedbacks-imgs img {
+        width: 50px;
+    }
+}
+
+/* Responsivo para celulares */
+@media (max-width: 600px) {
     nav ul {
+        gap: 6px;
+        padding: 2px 0;
+    }
+    nav ul a {
+        font-size: 20px;
+        margin-top: 0;
+    }
+    .imagem-home h1{
+        font-size: 40px;
+    }
+    .container {
+        margin-top: 300px;
+        width: 88vw;
+        padding: 2px;
+        font-size: 0.85rem;
+    }
+    .h2-quadrado {
+        width: 28vw;
+        font-size: 0.9rem;
+        margin: 8px auto 4px auto;
+    }
+    .textos-p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        width: 98vw;
+        height: auto;
+        margin: 8px auto;
+        padding: 2px;
+        font-size: 0.85rem;
+    }
+    .textos-p p {
+        padding: 6px;
+        margin: 0;
+        width: 95vw;
+        font-size: 0.85rem;
+    }
+    .textos-h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        width: 98vw;
+        margin: 8px auto;
+        font-size: 0.95rem;
+    }
+    .textos-h3 h3 {
+        font-size: 0.95rem;
+        padding: 6px;
+    }
+
+    .Galeria {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        margin-top: 600px;
+    }
+     .diferenciais {
+        flex-direction: column;
+        align-items: center;
         gap: 10px;
     }
-    /* ...restante do seu código responsivo... */
+    .diferencial {
+        width: 90vw;
+        min-width: 0;
+        max-width: 98vw;
+        margin-bottom: 8px;
+    }
+    .feedbacks {
+        width: 98vw;
+        gap: 0.2rem;
+        margin-top: 1em;
+    }
+    .feedbacks h2 {
+        font-size: 0.7rem;
+    }
+    .feedbacks-imgs img {
+        width: 20px;
+    }
 }
+

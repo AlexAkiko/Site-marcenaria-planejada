@@ -77,39 +77,63 @@ nav ul a{
     margin-top: 60px;
 }
 
-/* Responsividade para telas menores */
 
+/* Responsividade para telas menores */
 @media (max-width: 900px) {
     .Localização-Section img {
-        width: 50px;
+        width: 120px;
         margin-top: 100px;
     }
-    nav ul {
-        gap: 40px;
-        padding: 5px;
-        height: auto;
-        flex-wrap: wrap;
-    }
-
-    nav ul a {
-        font-size: 20px;
-        margin-top: 5px;
-    }
-
     .Localização-Section h2 {
         font-size: 36px;
-        text-align: center;
+        margin-top: 20px;
     }
-
     .Localização-Section iframe {
         width: 95vw;
         height: 300px;
         margin-top: 20px;
     }
-
     .banner img {
         width: 100vw;
         height: auto;
         margin-top: 40px;
     }
+    nav ul {
+        gap: 40px;
+        padding: 10px 0;
+    }
+    nav ul a {
+        font-size: 20px;
+        margin-top: 5px;
+    }
 }
+
+@media (max-width: 600px) {
+    .Localização-Section img {
+        width: 80px;
+        margin-top: 60px;
+    }
+    .Localização-Section h2 {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .Localização-Section iframe {
+        width: 98vw;
+        height: 180px;
+        margin-top: 10px;
+    }
+    .banner img {
+        width: 100vw;
+        height: auto;
+        margin-top: 20px;
+    }
+    nav ul {
+        gap: 10px;
+        padding: 8px 0;
+    }
+    nav ul a {
+        font-size: 14px;
+        margin-top: 0;
+    }
+}
+
